@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+header {
+  display: flex;
+  padding: 15px;
+  background-color: #495e57;
+  justify-content: center;
+}
+header section {
+  display: flex; /* Use flexbox to lay out child elements */
+  align-items: center; /* Vertically align items */
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+
+Nav {
+  display: flex; /* Use flexbox for the navigation */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 15px; /* Add space between buttons */
+  padding: 20px; /* Add padding around the navigation */
+  background-color: #f1f1f1; /* Background color for the navigation bar */
+}
+
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #dec014; /* Button background color */
+  color: #fff; /* Text color for the button */
+  text-align: center; /* Center the text inside the button */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove the default underline */
+  font-size: 1rem; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+}
+
+a:hover {
+  background-color: #d9e536; /* Change the background color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+a:focus {
+  outline: 2px solid #b6b64b; /* Add a focus outline */
+  outline-offset: 2px; /* Offset the focus outline */
+}
+
+a:active {
+  background-color: #b2b95a; /* Change the background color on click */
+}
+
+/* 媒体查询：小屏幕设备（手机） */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  a {
+    display: block; /* Make each button take full width */
+    width: 100%; /* Full width for each button */
+    padding: 12px 0; /* Adjust padding for better touch targets */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+
+
+footer section {
+
+  justify-items: center;
+  width:80%;
+  margin-left: 10%;
+  gap: 20px;
+  }
+
+
+footer {
+  padding: 20px;
+}
+
+footer img {
+  height:300px;
+}
+
+form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+   footer section {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+footer section {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display:grid;
+}
+}
