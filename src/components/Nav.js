@@ -1,5 +1,6 @@
 import React from "react";
 import littlelemon_logo from "../images/littlelemon_logo.png"
+import { Link } from 'react-router-dom'; // 确保导入 Link 组件
 
 const Nav = () => {
     return(
@@ -14,12 +15,13 @@ const Nav = () => {
                 <li><a>Login</a></li>
 
             </ul>*/}
-            <a>Home</a>
-            <a>About</a>
-            <a>Menu</a>
-            <a>Reservations</a>
-            <a>Order Online</a>
-            <a>Login</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/booking">Booking Table</Link>
+            <Link to="/order-online">Order Online</Link>
+            <Link to="/login">Login</Link>
+            
         </nav>
     )
 }
